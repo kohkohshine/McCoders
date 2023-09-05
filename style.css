@@ -1,1 +1,12 @@
+.image-container {
+    overflow: hidden;
+    max-height: 50vh;
+    /* 50% of the viewport height */
+}
 
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
