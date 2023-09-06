@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- Font Awesome CSS -->
@@ -20,132 +21,284 @@
 <body>
   <!--Kim-->
   <header>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="#">
+          <img src="pngfind.com-food-icon-png-369794.png" alt="Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="row w-100 align-items-center">
+            <!-- Empty space to push the buttons more to the right -->
+            <div class="col-lg-2"></div>
+
+            <!-- Links in the center -->
+            <div class="col-lg-6 d-flex justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Recipies
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Vegan</a></li>
+                    <li><a class="dropdown-item" href="#">Vegetarian</a></li>
+                    <li><a class="dropdown-item" href="#">Paleo</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Classics</a></li>
+                  </ul>
+                </li>
+                <!-- Additional button -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ebookModal">Get Your E-Book!</a>
+
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sign In and Log In buttons on the right -->
+            <div class="col-lg-4 text-right d-flex justify-content-end align-items-center">
+              <button class="btn btn-dark" style="margin-right: 15px;">Log in</button>
+              <button class="btn btn-dark">Sign up for free</button>
+            </div>
+
+    </nav>
+
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai.jpg" class="d-block w-100"
+            alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="close-up-tasty-mussels-wooden-board.jpg" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="victoria-shes-UC0HZdUitWY-unsplash.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
   </header>
 
   <!--Harun-->
-  <main>
-    <section class="container">
-      <article class="row">
-        <div class="col-2 pb-1 pt-1 .border-bottom" style="border-bottom: 0.05rem solid black;">
-          <h3 class="h3">Recipes</h3>
-        </div>
-        <div class="col-1"></div>
-        <div class="col-5 pb-1 pt-1 .border-bottom" style="border-bottom: 0.05rem solid black;">
-          <div class="input-group">
-            <span class="input-group-text"><i class="bi bi-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search">
-            <button class="btn btn:hover btn-dark">Search</button>
-          </div>
-        </div>
-        <div class="col-2 pb-1 pt-1 .border-bottom" style="border-bottom: 0.05rem solid black;"></div>
-        <div class="col-2 pb-1 pt-1 .border-bottom" style="border-bottom: 0.05rem solid black;">
-          <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Desserts</a></li>
-              <li><a class="dropdown-item" href="#">Breakfast</a></li>
-              <li><a class="dropdown-item" href="#">Lunch</a></li>
-              <li><a class="dropdown-item" href="#">Dinner</a></li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="container">
-      <article class="row">
-        <div class="col-2">
-          <div class="row">
-            <div class="col-12">
-              <button class="btn">Desserts</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <button class="btn">Desserts</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <button class="btn">Desserts</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-1"></div>
-        <div class="col-5 pt-2">
-          <div class="card mb-2" style="max-width: 540px; cursor: pointer;">
-            <div class="row g-0 h-100">
-              <div class="col-md-4 pointer-event">
-                <img
-                  src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80"
-                  class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration:</small>
-                  </p>
-                  <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
-                      Serving:</small>
-                  </p>
+   <main>
+        <section class="container-fluid">
+            <article class="row d-flex align-items-center">
+                <div class="col-lg-2 col-md-2 pb-1 pt-1 border-bottom">
+                    <h3 class="h3">Recipes</h3>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 pt-2">
-          <div class="row h-50">
-            <div class="col-12  ">
-              <div class="card mb-2" style="max-width: 540px; cursor: pointer;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2822&q=80"
-                      class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i>
-                          Duration:</small></p>
-                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
-                          Serving:</small>
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-12 col-md-9 col-lg-5 pb-lg-1 pt-lg-1 border-bottom">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button id="alertButton" class="btn btn-info">Search</button>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row h-25">
-            <div class="col-12 ">
-              <div class="card mb-2" style="max-width: 540px; cursor: pointer;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2880&q=80"
-                      class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i>
-                          Duration:</small></p>
-                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
-                          Serving:</small>
+                <div class="col-lg-2 pb-1 pt-1 d-md-none d-lg-flex"></div>
+                <div class="col-12 col-lg-2 pb-1 pt-1 border-bottom d-md-none d-lg-inline">
+                    <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sort by:
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Name</a></li>
+                            <li><a class="dropdown-item" href="#">Newest</a></li>
+                            <li><a class="dropdown-item" href="#">Duration</a></li>
+                            <li><a class="dropdown-item" href="#">Serving</a></li>
+                        </ul>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="container"></section>
+            </article>
+        </section>
+        
+        <section class="container-fluid">
+            <article class="row">
+                <div class="col-12 d-md-flex d-lg-none">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active text-decoration-none text-dark bg-info" id="pasta-tab" data-bs-toggle="pill" href="#pasta" role="tab" aria-controls="pasta" aria-selected="true">Pasta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-dark" id="pizza-tab" data-bs-toggle="pill" href="#pizza" role="tab" aria-controls="pizza" aria-selected="false">Pizza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-dark" id="breakfast-tab" data-bs-toggle="pill" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-dark" id="lunch-tab" data-bs-toggle="pill" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-decoration-none text-dark" id="dinner-tab" data-bs-toggle="pill" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-dark" id="desserts-tab" data-bs-toggle="pill" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Vertical Tabs  -->
+                <div class="col-md-3 col-lg-2 d-none d-lg-flex">
+                    <div class="nav flex-column nav-pills me-3" id="myTabs" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active text-decoration-none bg-info text-dark" id="home-tab"  data-bs-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Pasta</a>
+                        <a class="nav-link text-decoration-none text-dark" id="profile-tab" data-bs-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pizza</a>
+                        <a class="nav-link text-decoration-none text-dark" id="breakfast-tab" data-bs-toggle="pill" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</a>
+                        <a class="nav-link text-decoration-none text-dark" id="lunch-tab" data-bs-toggle="pill" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
+                        <a class="nav-link text-decoration-none text-dark" id="dinner-tab" data-bs-toggle="pill" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
+                        <a class="nav-link text-decoration-none text-dark" id="desserts-tab" data-bs-toggle="pill" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-lg-1"></div>
+        
+                <div class="col-sm-12 col-md-12 col-lg-8 flex-md-row flex-sm-column flex-lg-row flex-nowrap align-items-lg-start pt-1 pb-1">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <a href="./Erecipepage" class="card-link text-decoration-none">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex">
+                                        <img src="./images/pasta-5.png" class="img-fluid object-fit-cover rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8 pt-4 pb-4 d-flex align-items-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title h3">Fettuccine with Marinara Sauce</h5>
+                                            <p class="card-text">Fettuccine with Marinara Sauce is a delightful Italian pasta
+                                                dish featuring wide, flat fettuccine noodles generously coated with a rich and
+                                                savory marinara sauce.</p>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-clock"></i> Duration: 40 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-people-fill"></i> Serving: 4 </small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
+                       
+                        <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
+                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                                <div class="row g-0">
+                                    <div class="col-md-6 d-flex">
+                                        <img src="./images/pasta-4.png" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-center justify-content-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title h4">Spaghetti with Meatballs</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-clock"></i> Duration: 20 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-people-fill"></i> Serving: 4</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12">
+                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                                <div class="row g-0">
+                                    <div class="col-md-6 d-flex">
+                                        <img src="./images/pasta-3.png" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title h4">Lemon Basil Pesto Linguine</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-clock"></i> Duration: 20 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-people-fill"></i> Serving: 4</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
+                        <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
+                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                                <div class="row g-0">
+                                    <div class="col-md-6 d-flex">
+                                        <img src="./images/pasta-2.png" class="rounded-start h-100 w-100 object-fit-contain"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-center justify-content-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title h4">Spaghetti Carbonara with Pancetta and Eggs</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-clock"></i> Duration: 30 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-people-fill"></i> Serving: 2</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12">
+                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                                <div class="row g-0">
+                                    <div class="col-md-6 d-flex">
+                                        <img src="./images/pasta-1.png" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title h4">Creamy Garlic Parmesan Pasta</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-clock"></i> Duration: 45 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i
+                                                        class="bi bi-people-fill"></i> Serving: 6</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
   </main>
+
 
   <!--Kim-->
   <footer class="position-absolute bottom-0 w-100" style="background-color: grey;">
@@ -191,9 +344,30 @@
       <!-- Copyright -->
     </div>
   </footer>
-  </div>
+  
   <!-- jQuery JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!----alert for the navbar grab your ebook-->
+  <div class="modal fade" id="ebookModal" tabindex="-1" aria-labelledby="ebookModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <img src="Dark Brown Minimalist Download Ebook ipad Mockup Instagram Post.png" alt="E-Book Image"
+            class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <!-- Popper JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -201,4 +375,8 @@
     crossorigin="anonymous"></script>
 </body>
 
+
 </html>
+
+
+  

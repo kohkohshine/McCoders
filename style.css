@@ -72,3 +72,14 @@ body {
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css');
 
 /* Your other CSS rules here */
+/* Carousel header */
+.carousel-inner {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
