@@ -4,15 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McCoders</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
-   <header></header>
-   <main></main> 
-   <footer></footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    
+    <header>
+    <!--Navbar from the Landing Page-->
+    
+
+    <!--Recipe Title (h1)-->
+    <p class="h1 pt-5 pb-2 text-center">Spaghetti Marinara</p> 
+    
+    <!--Breadcrump Attempt-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2 justify-content-center">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Delicious Spaghetti</li>
+            <li class="breadcrumb-item"><a href="#">Second Recipe</a></li>
+            <li class="breadcrumb-item"><a href="#">Third Recipe</a></li>
+        </ol>
+    </nav>  
+    </header>
+    
+    <main>
+    <!--Icons Section-->
+    <div class="container pt-5">
+        <div class="row justify-content-center py-2 flex-wrap" style="border-top: 0.05rem solid black; border-bottom: 0.05rem solid black;">
+            <div class="col-1 column text-center">
+                <i class="bi bi-pin-map" style="font-size: 1.5rem;"></i>
+                <p><strong>Difficulty</strong><br>easy</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-stopwatch" style="font-size: 1.5rem;"></i>
+                <p><strong>Prep Time</strong><br>10m</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-hourglass" style="font-size: 1.5rem;"></i>
+                <p><strong>Total Time</strong><br>1h</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-pie-chart" style="font-size: 1.5rem;"></i>
+                <p><strong>Servings</strong><br>3 meals</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-speedometer2" style="font-size: 1.5rem;"></i>
+                <p><strong>Calories</strong><br>400cal/serving</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-star" style="font-size: 1.5rem;"></i>
+                <p><strong>Protein</strong><br>20g</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-sun" style="font-size: 1.5rem;"></i>
+                <p><strong>Carbs</strong><br>50g</p>
+            </div>
+            <div class="col-1 column text-center">
+                <i class="bi bi-thermometer-snow" style="font-size: 1.5rem;"></i>
+                <p><strong>Fat</strong><br>15g</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Picture Section-->
+    <div class="container text-start pt-5">
+        <div class="row align-items-center">
+            <div class="col-sm-5 col-md-6 lh-lg">The <strong>Spaghetti Marinara</strong> is a delectable Italian dish that promises to transport your taste buds straight to Tuscany. At its heart is a generous tangle of perfectly al dente spaghetti, cooked just until it achieves that ideal balance of firmness and pliability.<br><br>The pasta is smothered in a robust marinara sauce, simmered slowly over several hours to infuse it with the rich flavors of ripe, juicy tomatoes, fresh garlic, and a medley of aromatic herbs such as basil, oregano, and a hint of rosemary. The sauce clings to each strand of spaghetti, ensuring a burst of flavor with every bite.<br><br>
+                Adding to the dish's allure is a topping of finely grated Parmesan cheese, which melts gently into the hot pasta and sauce to add a layer of creamy, salty goodness. A smattering of fresh basil leaves on top adds a pop of color and an extra hint of freshness.<br><br>
+                Accompanying the spaghetti is a side of crusty garlic bread, its golden-brown exterior giving way to a soft, warm interior bursting with the rich flavors of garlic and butter.<br><br><strong>Spaghetti Marinara</strong> is not just a meal, it's an indulgent Italian experience that will leave you yearning for more. Whether you're seeking comfort food or a gourmet treat, this dish is sure to satisfy your cravings.</div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-center">
+                <img src="/example images/spaghetti.jpg" class="img-thumbnail my-5" alt="Spaghetti Marinara" height= 'auto', width = '100%' >
+            </div>
+        </div>
+    </div>
+
+    <!-- Ingredients & Prep Section -->
+    <div class="container text-start py-5 align-middle">
+        <div class="row">
+            <div class="col-sm-5 col-md-4 lh-lg">
+                <h2 class="pb-2">Ingredients</h2>
+                <ul class="list">
+                    <li class="list-item">1 lb of spaghetti</li>
+                    <li class="list-item">4 cups of marinara sauce</li>
+                    <li class="list-item">4 ripe, juicy tomatoes</li>
+                    <li class="list-item">4 cloves of fresh garlic</li>
+                    <li class="list-item">1 tablespoon of dried basil</li>
+                    <li class="list-item">1 tablespoon of dried oregano</li>
+                    <li class="list-item">A pinch of rosemary</li>
+                    <li class="list-item">1/2 cup of finely grated Parmesan cheese</li>
+                    <li class="list-item">A handful of fresh basil leaves</li>
+                    <li class="list-item">1 loaf of crusty bread</li>
+                    <li class="list-item">4 tablespoons of butter</li>
+                    <li class="list-item">2 cloves of garlic for the bread</li>
+                </ul>
+            </div>
+            <div class="col-sm-5 col-md-8 lh-lg">
+                <h2 class="pb-2">Preparation</h2>
+                <ol class="list">
+                    <li class="list-item">Cook the spaghetti according to the package instructions until it's al dente. Drain and set aside.</li>
+                    <li class="list-item">While the spaghetti is cooking, prepare the marinara sauce. In a large saucepan, combine the marinara sauce, tomatoes, garlic, dried basil, oregano, and rosemary. Simmer over low heat for several hours to infuse the flavors.</li>
+                    <li class="list-item">Preheat your oven to 375 degrees F (190 degrees C) for the garlic bread. Slice the loaf of bread and spread butter and minced garlic on each slice. Arrange the slices on a baking tray and bake until golden brown.</li>
+                    <li class="list-item">Once the sauce has simmered for several hours and your garlic bread is ready, it's time to assemble the dish. Toss the spaghetti in the marinara sauce until it's fully coated.</li>
+                    <li class="list-item">Dish out the spaghetti onto plates, top with a generous sprinkle of finely grated Parmesan cheese while it's still hot so the cheese will melt into the pasta.</li>
+                    <li class="list-item">Garnish with fresh basil leaves for added color and flavor.</li>
+                    <li class="list-item">Serve the spaghetti with a side of crusty garlic bread.</li>
+                    <li class="list-item">Enjoy your Delicious Spaghetti!</li>
+                </ol>
+            </div>
+            </div>
+        </div>
+    </div>
+</main> 
+
+<!--Footer from the Landing Page-->
+<footer></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
