@@ -9,6 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+
 </head>
 
 <body>
@@ -141,9 +147,21 @@
   </main>
 
   <!--Kim-->
-  <footer class="position-absolute bottom-0 w-100" style="background-color: #fff;">
-    <div class="container-fluid my-2">
-      <div class="row justify-content-center py-2">
+  <footer class="position-absolute bottom-0 w-100" style="background-color: grey;">
+    <div class=" container-fluid my-2">
+      <div class=" row justify-content-center py-2">
+        <div class="bbb-wrapper fl-wrap">
+          <div class="subcribe-form fl-wrap">
+            <p class="text-center">Sign up now to our newsletter</p>
+            <form id="subscribe" novalidate="true">
+              <input class="enteremail" name="EMAIL" id="subscribe-email" placeholder="Email" spellcheck="false"
+                type="text">
+              <button type="submit" id="subscribe-button" class="subscribe-button color-bg"><i class="fa fa-rss"></i>
+                Subscribe</button>
+              <label for="subscribe-email" class="subscribe-message"></label>
+            </form>
+          </div>
+        </div>
         <!-- Facebook -->
         <div class="col-auto">
           <a href="https://www.facebook.com/" target="_blank">
@@ -172,7 +190,11 @@
     </div>
   </footer>
   </div>
+  <!-- jQuery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
