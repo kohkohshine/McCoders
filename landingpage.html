@@ -9,12 +9,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+
 </head>
 
 <body>
   <!--Kim-->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <!-- Logo on the left -->
         <a class="navbar-brand" href="#">
@@ -105,8 +112,9 @@
     </div>
 
   </header>
+
   <!--Harun-->
-     <main>
+   <main>
         <section class="container-fluid">
             <article class="row d-flex align-items-center">
                 <div class="col-lg-2 col-md-2 pb-1 pt-1 border-bottom">
@@ -291,10 +299,54 @@
         </section>
   </main>
 
+
   <!--Kim-->
-  <footer></footer>
-
-
+  <footer class="position-absolute bottom-0 w-100" style="background-color: grey;">
+    <div class=" container-fluid my-2">
+      <div class=" row justify-content-center py-2">
+        <div class="bbb-wrapper fl-wrap">
+          <div class="subcribe-form fl-wrap">
+            <p class="text-center">Unlock a World of Delicious Recipes – Join Now!
+            </p>
+            <form id="subscribe" novalidate="true">
+              <input class="enteremail" name="EMAIL" id="subscribe-email" placeholder="Email" spellcheck="false"
+                type="text">
+              <button type="submit" id="subscribe-button" class="subscribe-button color-bg"><i class="fa fa-rss"></i>
+                Subscribe</button>
+              <label for="subscribe-email" class="subscribe-message"></label>
+            </form>
+          </div>
+        </div>
+        <!-- Facebook -->
+        <div class="col-auto">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="pngwing.com-7.png" alt="Facebook Logo" class="mx-1" style="width: 40px; height: 40px;">
+          </a>
+        </div>
+        <!-- Instagram -->
+        <div class="col-auto">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="pngwing.com-8.png" alt="Instagram Logo" class="mx-1" style="width: 40px; height: 40px;">
+          </a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="col-auto">
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="pngwing.com-6.png" alt="LinkedIn Logo" class="mx-1" style="width: 40px; height: 40px;">
+          </a>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">McCoders</a>
+      </div>
+      <!-- Copyright -->
+    </div>
+  </footer>
+  
+  <!-- jQuery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!----alert for the navbar grab your ebook-->
   <div class="modal fade" id="ebookModal" tabindex="-1" aria-labelledby="ebookModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -316,12 +368,15 @@
   <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
   <!-- Popper JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 </body>
 
+
 </html>
+
 
   
