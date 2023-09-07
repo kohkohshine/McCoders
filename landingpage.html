@@ -26,11 +26,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="row w-100 align-items-center">
-            <!-- Empty space to push the buttons more to the right -->
-            <div class="col-lg-2"></div>
-
             <!-- Links in the center -->
-            <div class="col-lg-6 d-flex justify-content-end">
+            <div class="col-lg-8 d-flex justify-content-end">
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -55,19 +52,22 @@
                 </li>
                 <!-- Additional button -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ebookModal">Get Your E-Book!</a>
-
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ebookModal">Get Your
+                    E-Book!</a>
                 </li>
               </ul>
             </div>
 
             <!-- Sign In and Log In buttons on the right -->
             <div class="col-lg-4 text-right d-flex justify-content-end align-items-center">
-              <button class="btn btn-dark" style="margin-right: 15px;">Log in</button>
-              <button class="btn btn-dark">Sign up for free</button>
+              <button class="btn" style="background-color: #40BBF0; margin-right: 15px;">Log in</button>
+              <button class="btn" style="background-color: #40BBF0;">Sign up for free</button>
             </div>
-
+          </div>
+        </div>
+      </div>
     </nav>
+
 
 
     <!-- Carousel -->
@@ -106,189 +106,196 @@
 
   </header>
   <!--Harun-->
-     <main>
-        <section class="container-fluid">
-            <article class="row d-flex align-items-center">
-                <div class="col-lg-2 col-md-2 pb-1 pt-1 border-bottom">
-                    <h3 class="h3">Recipes</h3>
-                </div>
-                <div class="col-lg-1 col-md-1"></div>
-                <div class="col-12 col-md-9 col-lg-5 pb-lg-1 pt-lg-1 border-bottom">
-                    <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button id="alertButton" class="btn btn-info">Search</button>
+  <main>
+    <section class="container-fluid">
+      <article class="row d-flex align-items-center">
+        <div class="col-lg-2 col-md-2 pb-1 pt-1 border-bottom">
+          <h3 class="h3">Recipes</h3>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-12 col-md-9 col-lg-5 pb-lg-1 pt-lg-1 border-bottom">
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <button id="alertButton" class="btn btn-info">Search</button>
+          </div>
+        </div>
+        <div class="col-lg-2 pb-1 pt-1 d-md-none d-lg-flex"></div>
+        <div class="col-12 col-lg-2 pb-1 pt-1 border-bottom d-md-none d-lg-inline">
+          <div class="dropdown">
+            <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sort by:
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Name</a></li>
+              <li><a class="dropdown-item" href="#">Newest</a></li>
+              <li><a class="dropdown-item" href="#">Duration</a></li>
+              <li><a class="dropdown-item" href="#">Serving</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container-fluid">
+      <article class="row">
+        <div class="col-12 d-md-flex d-lg-none">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active text-decoration-none text-dark bg-info" id="pasta-tab" data-bs-toggle="pill"
+                href="#pasta" role="tab" aria-controls="pasta" aria-selected="true">Pasta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-dark" id="pizza-tab" data-bs-toggle="pill" href="#pizza"
+                role="tab" aria-controls="pizza" aria-selected="false">Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-dark" id="breakfast-tab" data-bs-toggle="pill"
+                href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-dark" id="lunch-tab" data-bs-toggle="pill" href="#lunch"
+                role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-decoration-none text-dark" id="dinner-tab" data-bs-toggle="pill" href="#dinner"
+                role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-dark" id="desserts-tab" data-bs-toggle="pill"
+                href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Vertical Tabs  -->
+        <div class="col-md-3 col-lg-2 d-none d-lg-flex">
+          <div class="nav flex-column nav-pills me-3" id="myTabs" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active text-decoration-none bg-info text-dark" id="home-tab" data-bs-toggle="pill"
+              href="#home" role="tab" aria-controls="home" aria-selected="true">Pasta</a>
+            <a class="nav-link text-decoration-none text-dark" id="profile-tab" data-bs-toggle="pill" href="#profile"
+              role="tab" aria-controls="profile" aria-selected="false">Pizza</a>
+            <a class="nav-link text-decoration-none text-dark" id="breakfast-tab" data-bs-toggle="pill"
+              href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</a>
+            <a class="nav-link text-decoration-none text-dark" id="lunch-tab" data-bs-toggle="pill" href="#lunch"
+              role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
+            <a class="nav-link text-decoration-none text-dark" id="dinner-tab" data-bs-toggle="pill" href="#dinner"
+              role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
+            <a class="nav-link text-decoration-none text-dark" id="desserts-tab" data-bs-toggle="pill" href="#desserts"
+              role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+          </div>
+        </div>
+        <div class="d-none d-lg-flex col-lg-1"></div>
+
+        <div
+          class="col-sm-12 col-md-12 col-lg-8 flex-md-row flex-sm-column flex-lg-row flex-nowrap align-items-lg-start pt-1 pb-1">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <a href="./Erecipepage" class="card-link text-decoration-none">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4 d-flex">
+                    <img src="./images/pasta-5.png" class="img-fluid object-fit-cover rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8 pt-4 pb-4 d-flex align-items-center">
+                    <div class="card-body">
+                      <h5 class="card-title h3">Fettuccine with Marinara Sauce</h5>
+                      <p class="card-text">Fettuccine with Marinara Sauce is a delightful Italian pasta
+                        dish featuring wide, flat fettuccine noodles generously coated with a rich and
+                        savory marinara sauce.</p>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 40
+                          min</small></p>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
+                          Serving: 4 </small></p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-2 pb-1 pt-1 d-md-none d-lg-flex"></div>
-                <div class="col-12 col-lg-2 pb-1 pt-1 border-bottom d-md-none d-lg-inline">
-                    <div class="dropdown">
-                        <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Sort by:
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Name</a></li>
-                            <li><a class="dropdown-item" href="#">Newest</a></li>
-                            <li><a class="dropdown-item" href="#">Duration</a></li>
-                            <li><a class="dropdown-item" href="#">Serving</a></li>
-                        </ul>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
+
+            <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
+              <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                <div class="row g-0">
+                  <div class="col-md-6 d-flex">
+                    <img src="./images/pasta-4.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-6  d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title h4">Spaghetti with Meatballs</h5>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 20
+                          min</small></p>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
+                          Serving: 4</small></p>
                     </div>
+                  </div>
                 </div>
-            </article>
-        </section>
-        
-        <section class="container-fluid">
-            <article class="row">
-                <div class="col-12 d-md-flex d-lg-none">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active text-decoration-none text-dark bg-info" id="pasta-tab" data-bs-toggle="pill" href="#pasta" role="tab" aria-controls="pasta" aria-selected="true">Pasta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-dark" id="pizza-tab" data-bs-toggle="pill" href="#pizza" role="tab" aria-controls="pizza" aria-selected="false">Pizza</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-dark" id="breakfast-tab" data-bs-toggle="pill" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-dark" id="lunch-tab" data-bs-toggle="pill" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-decoration-none text-dark" id="dinner-tab" data-bs-toggle="pill" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-dark" id="desserts-tab" data-bs-toggle="pill" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
-                        </li>
-                    </ul>
+              </a>
+            </div>
+
+            <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12">
+              <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                <div class="row g-0">
+                  <div class="col-md-6 d-flex">
+                    <img src="./images/pasta-3.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title h4">Lemon Basil Pesto Linguine</h5>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 20
+                          min</small></p>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
+                          Serving: 4</small></p>
+                    </div>
+                  </div>
                 </div>
-        
-                <!-- Vertical Tabs  -->
-                <div class="col-md-3 col-lg-2 d-none d-lg-flex">
-                    <div class="nav flex-column nav-pills me-3" id="myTabs" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active text-decoration-none bg-info text-dark" id="home-tab"  data-bs-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Pasta</a>
-                        <a class="nav-link text-decoration-none text-dark" id="profile-tab" data-bs-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pizza</a>
-                        <a class="nav-link text-decoration-none text-dark" id="breakfast-tab" data-bs-toggle="pill" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</a>
-                        <a class="nav-link text-decoration-none text-dark" id="lunch-tab" data-bs-toggle="pill" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
-                        <a class="nav-link text-decoration-none text-dark" id="dinner-tab" data-bs-toggle="pill" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false">Dinner</a>
-                        <a class="nav-link text-decoration-none text-dark" id="desserts-tab" data-bs-toggle="pill" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
+            <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
+              <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                <div class="row g-0">
+                  <div class="col-md-6 d-flex">
+                    <img src="./images/pasta-2.png" class="rounded-start h-100 w-100 object-fit-contain" alt="...">
+                  </div>
+                  <div class="col-md-6  d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title h4">Spaghetti Carbonara with Pancetta and Eggs</h5>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 30
+                          min</small></p>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
+                          Serving: 2</small></p>
                     </div>
+                  </div>
                 </div>
-                <div class="d-none d-lg-flex col-lg-1"></div>
-        
-                <div class="col-sm-12 col-md-12 col-lg-8 flex-md-row flex-sm-column flex-lg-row flex-nowrap align-items-lg-start pt-1 pb-1">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <a href="./Erecipepage" class="card-link text-decoration-none">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-md-4 d-flex">
-                                        <img src="./images/pasta-5.png" class="img-fluid object-fit-cover rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-8 pt-4 pb-4 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h3">Fettuccine with Marinara Sauce</h5>
-                                            <p class="card-text">Fettuccine with Marinara Sauce is a delightful Italian pasta
-                                                dish featuring wide, flat fettuccine noodles generously coated with a rich and
-                                                savory marinara sauce.</p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 40 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 4 </small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+              </a>
+            </div>
+
+            <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12">
+              <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                <div class="row g-0">
+                  <div class="col-md-6 d-flex">
+                    <img src="./images/pasta-1.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title h4">Creamy Garlic Parmesan Pasta</h5>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 45
+                          min</small></p>
+                      <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i>
+                          Serving: 6</small></p>
                     </div>
-                    <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
-                       
-                        <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
-                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-4.png" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-6  d-flex align-items-center justify-content-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h4">Spaghetti with Meatballs</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 20 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 4</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12">
-                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-3.png" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h4">Lemon Basil Pesto Linguine</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 20 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 4</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                    
-                    <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
-                        <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
-                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-2.png" class="rounded-start h-100 w-100 object-fit-contain"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-6  d-flex align-items-center justify-content-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h4">Spaghetti Carbonara with Pancetta and Eggs</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 30 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 2</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12">
-                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-1.png" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h4">Creamy Garlic Parmesan Pasta</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 45 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 6</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </article>
-        </section>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
 
   <!--Kim-->
@@ -323,5 +330,3 @@
 </body>
 
 </html>
-
-  
