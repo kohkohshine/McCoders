@@ -10,6 +10,16 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="">
+<style>
+  .card{
+  transition: border-color 1s, box-shadow 0.5s;
+  margin: 0 6px;
+}
+.card:hover {
+  border-color: #10CAF0;
+  transform: scale(1.025);
+}
+</style>
 
 </head>
 
@@ -125,7 +135,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 pb-1 pt-1 d-md-none d-lg-flex"></div>
-                <div class="col-12 col-lg-2 pb-1 pt-1 border-bottom d-md-none d-lg-inline">
+                <div class="col-12 col-lg-2 pb-1 pt-1 border-bottom d-md-none d-lg-flex justify-content-end">
                     <div class="dropdown">
                         <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -180,115 +190,122 @@
                 </div>
                 <div class="d-none d-lg-flex col-lg-1"></div>
         
-                <div class="col-sm-12 col-md-12 col-lg-8 flex-md-row flex-sm-column flex-lg-row flex-nowrap align-items-lg-start pt-1 pb-1">
-                    <div class="col-sm-12 col-md-12 col-lg-12 shadow">
-                        <a href="./Erecipepage.html" class="card-link text-decoration-none">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-md-4 d-flex">
-                                        <img src="./images/pasta-5.png" class="ratio ratio-16x9 rounded-start"
-                                            alt="...">
+                <div class="col-12 col-md-12 col-lg-8 align-items-lg-start pt-1 pb-1">
+
+                  <!-- Big Card (1st Column) -->
+                  <div class="col-12 shadow mb-3 ">
+                      <a href="./Erecipepage.html" class="card-link text-decoration-none">
+                          <div class="card h-100">
+                              <div class="row align-items-center">
+                                  <div class="col-md-6 col-lg-6 col-12">
+                                      <img src="./images/pasta-5.png" class="img-fluid rounded-start" alt="..."> 
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-12 pt-4 pb-4">
+                                      <div class="card-body">
+                                          <h5 class="card-title h3">Spaghetti Marinara</h5>
+                                          <p class="card-text">Fettuccine with Marinara Sauce is a delightful Italian pasta
+                                              dish featuring wide, flat fettuccine noodles generously coated with a rich and
+                                              savory marinara sauce.</p>
+                                          <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 40 min</small></p>
+                                          <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 4</small></p>
+                                          <button class="btn btn-info">Learn More</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+
+                  <div class="d-flex flex-md-row flex-wrap justify-content-around">
+                    <!-- Small Cards (2nd Column) -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card shadow h-100">
+                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-lg-6 col-12">
+                                        <img src="./images/pasta-4.png" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 pt-4 pb-4 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h3">Spaghetti Marinara</h5>
-                                            <p class="card-text">Fettuccine with Marinara Sauce is a delightful Italian pasta
-                                                dish featuring wide, flat fettuccine noodles generously coated with a rich and
-                                                savory marinara sauce.</p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 40 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 4 </small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row">
-                       
-                        <div class="card mb-2 mt-2 col-lg-6 col-sm-12 shadow">
-                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark ">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-4.png" class="ratio ratio-1x1 rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-6  d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-6 col-12">
                                         <div class="card-body">
                                             <h5 class="card-title h4">Spaghetti with Meatballs</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 20 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 4</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12 shadow">
-                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-3.png" class="ratio ratio-1x1 rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
-                                        <div class="card-body">
-                                            <h5 class="card-title h4">Lemon Basil Pesto Linguine</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 20 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 4</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 20 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 4</small></p>
+                                            <button class="btn btn-info">Learn More</button>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-        
-                    
-                    <div class="col-sm-12 col-md-6 flex-md-row col-lg-12 d-flex flex-row shadow">
-                        <div class="card mb-2 mt-2 col-lg-6 col-sm-12">
+                
+                    <!-- Small Cards (3rd Column) -->
+                    <div class="col-12 col-md-6 col-lg-6 mb-3">
+                        <div class="card shadow h-100">
                             <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-2.png" class="rounded-start ratio ratio-1x1"
-                                            alt="...">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-lg-6 col-12">
+                                        <img src="./images/pasta-3.png" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-6  d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-6 col-12">
                                         <div class="card-body">
-                                            <h5 class="card-title h4">Spaghetti Carbonara with Pancetta and Eggs</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 30 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 2</small></p>
+                                            <h5 class="card-title h4">Lemon Basil Pesto Linguine</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 20 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 4</small></p>
+                                            <button class="btn btn-info">Learn More</button>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-        
-                        <div class="card mb-2 mt-2 m-1 col-lg-6 col-sm-12 shadow">
+                    </div>
+                </div>
+                
+                <div class="d-flex flex-md-row flex-sm-column flex-wrap">
+                    <!-- Small Cards (4th Column) -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card shadow h-100">
                             <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex">
-                                        <img src="./images/pasta-1.png" class="ratio ratio-16x9 rounded-start"
-                                            alt="...">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-12 col-lg-6">
+                                        <img src="./images/pasta-3.png" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-6">
                                         <div class="card-body">
-                                            <h5 class="card-title h4">Creamy Garlic Parmesan Pasta</h5>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-clock"></i> Duration: 45 min</small></p>
-                                            <p class="card-text"><small class="text-body-secondary"><i
-                                                        class="bi bi-people-fill"></i> Serving: 6</small></p>
+                                            <h5 class="card-title h4">Spaghetti Carbonara</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 30 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 2</small></p>
+                                            <button class="btn btn-info">Learn More</button>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
+                    </div>
+                
+                    <!-- Small Cards (5th Column) -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card shadow h-100">
+                            <a href="./Erecipepage" class="card-link text-decoration-none text-dark">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-12 col-lg-6">
+                                        <img src="./images/pasta-4.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title h4">Parmesan Pasta</h5>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 45 min</small></p>
+                                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 6</small></p>
+                                            <button class="btn btn-info">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+
                     </div>
                 </div>
             </article>
