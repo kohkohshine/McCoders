@@ -4,15 +4,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McCoders</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css">
+   
 </head>
+<style>
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+    .card{
+    transition: border-color 1s, box-shadow 0.5s;
+    margin: 0 6px;
+  }
+  .card:hover {
+    border-color: #10CAF0;
+    transform: scale(1.025);
+  }
+
+  @media (max-width: 768px) {
+        .col-1 p {
+            font-size: 0.8rem; 
+        }
+    }
+
+    @media (max-width: 576px) {
+        .col-1 p {
+            font-size: 0.7rem; 
+          }
+    }
+
+  </style>
 
 <body>
-   <header></header>
-   <main></main> 
-   <footer></footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    
+   <!--Kim-->
+   <header>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./logo/mccoders.png" alt="Logo" height=60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="row w-100 align-items-center">
+            
+
+            <!-- Links in the center -->
+            <div class="col-lg-6 d-flex justify-content-lg-start justify-content-md-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Recipies
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Vegan</a></li>
+                    <li><a class="dropdown-item" href="#">Vegetarian</a></li>
+                    <li><a class="dropdown-item" href="#">Paleo</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Classics</a></li>
+                  </ul>
+                </li>
+                <!-- Additional button -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ebookModal">Get Your E-Book!</a>
+
+                </li>
+              </ul>
+            </div>
+            <!-- Empty space to push the buttons more to the right -->
+            <div class="col-lg-2"></div>
+
+            <!-- Sign In and Log In buttons on the right -->
+            <div class="col-lg-4 text-right d-flex justify-content-md-end justify-content-lg-end align-items-center flex-md-column flex-lg-row align-items-md-end">
+              <button class="btn btn-info mx-lg-1 my-lg-0 mx-md-0 my-md-1">Log in</button>
+              <button class="btn btn-info">Sign up for free</button>
+            </div>
+
+    </nav>
+      <!--Recipe Title (h1)-->
+    <div class="container-fluid"> <div class="row"><div class="col-12">
+        <h2 class="h1 pt-2 pb-2 text-md-center">Spaghetti with Meetballs</h2> 
+    </div> </div></div>
+    
+    
+    <!--Breadcrumb Attempt-->
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="col-12 p-0">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-2">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Recipes</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pasta</a></li>
+                        <li class="breadcrumb-item active " aria-current="page"><a href="#" class="text-dark text-decoration-none" >Spaghetti with Meetballs</a></li>
+                    </ol>
+                </nav>  
+
+    </div>
+</div>
+</div>
+   
+    </header>
+
+ 
+
+ 
+    <main>
+
+           <div class="container-fluid ">
+        <div class="row"> 
+        <div class="col-sm-12  col-md-12 p-0 mx-0">
+        <img src="https://images.unsplash.com/photo-1626078293133-44be0083dc37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" class="object-fit-cover" alt="Spaghetti Marinara" height= '500px', width = '100%' >
+    </div>
+</div>
+</div> 
+
+    <!--Icons Section-->
+    <div class="container-fluid text-center">
+      <div class="row justify-content-center justify-content-md-center flex-md-row flex-sm-column py-2 flex-wrap" style="border-top: 0.05rem solid black; border-bottom: 0.05rem solid black;">
+          
+          <div class="col-8 flex-md-row justify-content-center flex-md-nowrap d-flex flex-sm-column flex-wrap">   
+              
+              <div class="d-flex flex-row justify-content-center gap-5">
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-pin-map" ></i>
+                      <p><strong>Difficulty</strong><br>easy</p>
+                  </div>
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-stopwatch"></i>
+                      <p><strong>Prep Time</strong><br>10m</p>
+                  </div>
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-hourglass"></i>
+                      <p><strong>Total Time</strong><br>1h</p>
+                  </div>
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-pie-chart"></i>
+                      <p><strong>Meals</strong><br>3</p>
+                  </div> 
+              </div>
+
+              <div class="d-flex flex-row justify-content-center gap-5">  
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-speedometer2"></i>
+                      <p><strong>Calories</strong><br>40cal/ serving</p>
+                  </div>
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-star"></i>
+                      <p><strong>Protein</strong><br>20g</p>
+                  </div>
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-sun" ></i>
+                      <p><strong>Carbs</strong><br>50g</p>
+                  </div>
+                  <div class="col-1 column text-center">
+                      <i class="bi bi-thermometer-snow"></i>
+                      <p><strong>Fat</strong><br>15g</p>
+                  </div>  
+              </div> 
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Picture Section-->
+
+    <div class="container text-start pt-5">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 lh-lg"><strong>Spaghetti with Meetballs</strong> is a delicious Italian dish that transports your taste buds to Tuscany.<br><br>
+                It features perfectly cooked spaghetti topped with a flavorful marinara sauce made from ripe tomatoes, garlic, and aromatic herbs. Each bite is bursting with flavor, enhanced by grated Parmesan cheese and fresh basil leaves. Served with crusty garlic bread, this dish is a satisfying indulgence that will leave you wanting more.<br><br>
+                Whether you're in the mood for comfort food or a gourmet treat, <strong>Spaghetti with Meetballs</strong> is sure to satisfy. 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ingredients & Prep Section -->
+    <div class="container text-start py-5 align-middle">
+        <div class="row">
+            <div class="col-sm-5 col-md-4 lh-lg">
+                <h2 class="pb-2">Ingredients</h2>
+                <ul class="list">
+                    <li class="list-item">1 lb of spaghetti</li>
+                    <li class="list-item">4 cups of marinara sauce</li>
+                    <li class="list-item">4 ripe, juicy tomatoes</li>
+                    <li class="list-item">4 cloves of fresh garlic</li>
+                    <li class="list-item">1 tablespoon of dried basil</li>
+                    <li class="list-item">1 tablespoon of dried oregano</li>
+                    <li class="list-item">A pinch of rosemary</li>
+                    <li class="list-item">1/2 cup of finely grated Parmesan cheese</li>
+                    <li class="list-item">A handful of fresh basil leaves</li>
+                    <li class="list-item">1 loaf of crusty bread</li>
+                    <li class="list-item">4 tablespoons of butter</li>
+                    <li class="list-item">2 cloves of garlic for the bread</li>
+                </ul>
+            </div>
+            <div class="col-sm-5 col-md-8 lh-lg">
+                <h2 class="pb-2">Preparation</h2>
+                <ol class="list">
+                    <li class="list-item">Cook the spaghetti according to the package instructions until it's al dente. Drain and set aside.</li>
+                    <li class="list-item">While the spaghetti is cooking, prepare the marinara sauce. In a large saucepan, combine the marinara sauce, tomatoes, garlic, dried basil, oregano, and rosemary. Simmer over low heat for several hours to infuse the flavors.</li>
+                    <li class="list-item">Preheat your oven to 375 degrees F (190 degrees C) for the garlic bread. Slice the loaf of bread and spread butter and minced garlic on each slice. Arrange the slices on a baking tray and bake until golden brown.</li>
+                    <li class="list-item">Once the sauce has simmered for several hours and your garlic bread is ready, it's time to assemble the dish. Toss the spaghetti in the marinara sauce until it's fully coated.</li>
+                    <li class="list-item">Dish out the spaghetti onto plates, top with a generous sprinkle of finely grated Parmesan cheese while it's still hot so the cheese will melt into the pasta.</li>
+                    <li class="list-item">Garnish with fresh basil leaves for added color and flavor.</li>
+                    <li class="list-item">Serve the spaghetti with a side of crusty garlic bread.</li>
+                    <li class="list-item">Enjoy your Delicious Spaghetti!</li>
+                </ol>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="pb-2">You might also like</h2>
+            </div>
+        </div>
+    </div>
+            
+<div class="row d-flex flex-md-row  flex-sm-column  justif-content-center ">    
+    <div class="col-1"></div>
+    
+      <!-- Small Cards ( Column) -->
+    <div class="col-12 col-md-5 mb-3">
+        <div class="card shadow h-100">
+            <a href="./Krecipepage.html" class="card-link text-decoration-none text-dark">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <img src="./images/pasta-4.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-body">
+                            <h5 class="card-title h4">Lemon Basil Pesto Linguine</h5>
+                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 20 min</small></p>
+                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 4</small></p>
+                            <button class="btn btn-info">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Small Cards ( Column) -->
+    <div class="col-12 col-md-5 col-lg-5 mb-3">
+        <div class="card shadow h-100">
+            <a href="./Erecipepage.html" class="card-link text-decoration-none text-dark">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <img src="./images/pasta-3.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-body">
+                            <h5 class="card-title h4">Spaghetti Marinara</h5>
+                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-clock"></i> Duration: 20 min</small></p>
+                            <p class="card-text"><small class="text-body-secondary"><i class="bi bi-people-fill"></i> Serving: 4</small></p>
+                            <button class="btn btn-info">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+</div>
+<div class="col-1"></div>        
+</div>
+    
+</main> 
+
+  <!--Kim-->
+  <footer class="footer bg-black text-white mt-5">
+    <div class="container py-4">
+      <!-- Subscribe Bar -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's email"
+              aria-describedby="subscribe-button">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light" type="button" id="subscribe-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Social Icons -->
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a href="https://www.facebook.com/YourProfile" class="text-white mx-2" target="_blank"><i
+              class="bi bi-facebook" style="font-size: 24px;"></i></a>
+          <a href="https://www.instagram.com/YourProfile" class="text-white mx-2" target="_blank"><i
+              class="bi bi-instagram" style="font-size: 24px;"></i></a>
+          <a href="https://www.linkedin.com/in/YourProfile" class="text-white mx-2" target="_blank"><i
+              class="bi bi-linkedin" style="font-size: 24px;"></i></a>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col text-center mt-4">
+          <p>&copy; 2023 McCoders. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
